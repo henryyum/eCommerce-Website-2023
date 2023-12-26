@@ -1,0 +1,64 @@
+/* Footer */
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 36px 24px;
+  background-color: black;
+  font-family: "Inter", sans-serif;
+}
+
+.Footer-left {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.Footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Footer-right h4 {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.Footer-right p {
+  color: white;
+  font-size: 12px;
+}
+
+.Footer-right a {
+  text-decoration: none;
+  color: white;
+}
+
+.Footer-left a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+}
+
+.Footer-left a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .Footer-left a {
+    font-size: 11px;
+  }
+  .Footer-right h4 {
+    font-size: 11px;
+  }
+  .Footer-right p {
+    font-size: 8px;
+  }
+  .Footer-left {
+    gap: 22px;
+  }
+}

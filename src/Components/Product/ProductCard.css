@@ -1,0 +1,63 @@
+/* Popular Product Cards */
+
+.popular-product-image {
+  width: 100%;
+}
+
+.popular-product-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.popular-product-card {
+  flex-basis: 24%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 8px;
+  border: 1px solid lightgray;
+  transition: all 0.5s;
+  border-radius: 2px;
+  flex-grow: 1;
+}
+
+.popular-product-card:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.popular-product-card-text {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+}
+
+.popular-product-card-text p {
+  font-size: 18px;
+}
+
+.popular-product-card-text h4 {
+  font-size: 16px;
+}
+
+.popular-product-card a {
+  border-color: black;
+  color: black;
+  text-decoration: none;
+}
+  
+  @media (max-width: 800px) {
+   
+    .popular-product-card-text p {
+      font-size: 14px;
+    }
+  
+    .popular-product-card-text h4 {
+      font-size: 12px;
+    }
+  
+  }
+  
+ 

@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+}
+
+.App {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+}
+
+.main-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+/* ShopCard */
+
+.ShopCard-wrapper {
+  padding: 64px 0px;
+}
+
+/* Proud Products */
+
+.proud-products-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 0px 24px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px) {
+  .proud-products-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .proud-products-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

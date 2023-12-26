@@ -1,0 +1,122 @@
+/* ShopCards */
+
+.ShopCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e5e5e5;
+    border-radius: 2px;
+  }
+  
+  .ShopCard-h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .ShopCard-h4 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .ShopCard-btn {
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.5s;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .ShopCard-btn:hover {
+    cursor: pointer;
+    background-color: #c1121f;
+  }
+  
+  .ShopCard-img {
+    max-width: 800px;
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  /* ShopCard 1 */
+  
+  .ShopCard-wrapper {
+    padding: 64px 0px;
+  }
+  
+  .ShopCard1-left,
+  .ShopCard2-right{
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+    padding: 18px 24px;
+  }
+  
+  .ShopCard1-right {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+  }
+  
+  /* ShopCard 2 */
+  
+  .ShopCard2-left {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+  }
+
+  @media (max-width: 1000px) {
+    .ShopCard-h2 {
+      font-size: 18px;
+    }
+    .ShopCard-h4 {
+      font-size: 16px;
+      width: 250px;
+    }
+    
+  }
+  
+  @media (max-width: 800px) {
+    .ShopCard-h2 {
+      font-size: 16px;
+    }
+    .ShopCard-h4 {
+      font-size: 12px;
+    }
+    .ShopCard1-left,
+    .ShopCard2-right {
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .ShopCard-btn {
+      padding: 12px 20px;
+    }
+    .ShopCard1-left,
+    .ShopCard2-right {
+      text-align: center;
+      gap: 12px;
+    }
+  
+    .ShopCard a {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 550px) {
+  
+    .ShopCard-h2 {
+      font-size: 13px;
+    }
+    .ShopCard-h4 {
+      display: none;
+    }
+  }
